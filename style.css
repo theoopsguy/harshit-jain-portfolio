@@ -920,6 +920,7 @@ figure img,
   font-weight: 300;
   color: #a3a3a3;
   font-size: 3rem;
+  margin-bottom: 4rem;
 }
 
 .experience {
@@ -1034,6 +1035,79 @@ figure img,
   margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
+.education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.education-item {
+  flex-basis: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-size: 400px;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0px 0px 18px 0 black;
+  transition: 0.3s ease box-shadow;
+}
+
+.education-item h2 {
+  font-size: 1.777rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.education-item p {
+  color: white;
+  text-align: left;
+}
+
+.education-item li {
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+.education-item:hover {
+  box-shadow: 0px 0px 5px 0 black;
+}
+.education-item.education-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.workex-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.workex-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
 .project_container {
   padding: 0 5%;
 }
@@ -1091,8 +1165,8 @@ figure img,
   text-decoration: underline;
 }
 
-#contact_section {
-  margin-top: 0;
+.contact_section {
+  margin-top: 10rem;
 }
 
 .contact_section h2 {
@@ -1263,6 +1337,21 @@ figure img,
   }
   h1.skill-title {
     font-size: 6rem;
+  }
+
+  .workex-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .workex-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
   }
 
   #hero h1 {
@@ -1466,14 +1555,34 @@ figure img,
   .skill-bottom {
     flex-direction: row;
   }
+
+  .workex-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .workex-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+
   .skill-item {
     flex-basis: 50%;
     height: 300px;
     margin-right: 7em;
   }
 
-  .workex-gap {
-    margin-right: 6em;
+  .education {
+    flex-direction: row;
+  }
+  .education-item {
+    flex-basis: 50%;
+    height: 300px;
   }
 
   #footer h3 {
